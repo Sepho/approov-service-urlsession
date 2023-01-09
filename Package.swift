@@ -4,7 +4,7 @@ import PackageDescription
 let releaseTAG = "3.1.0"
 let package = Package(
     name: "ApproovURLSession",
-    platforms: [.iOS(.v10)],
+    platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
