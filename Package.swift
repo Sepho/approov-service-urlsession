@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ApproovURLSession",
-            targets: ["ApproovURLSession"]),
+            targets: ["Approov", "ApproovURLSession"])
     ],    
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -17,6 +17,10 @@ let package = Package(
         .target(
             name: "ApproovURLSession",
             exclude: ["README.md", "LICENSE"]
-            )
+            ),
+        .binaryTarget(
+            name: "Approov",
+            path: "Approov.xcframework"
+        )
     ]
 )
