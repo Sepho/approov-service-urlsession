@@ -16,7 +16,7 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
         .package(
             url: "https://github.com/approov/approov-ios-sdk.git", 
-            .exact(from: "3.1.0")
+            .exact("3.1.0")
         )
     ],
     targets: [
